@@ -12,10 +12,11 @@ body {
     font-weight: 400;
     font-style: normal;
     background-image: url("../images/jellyfish.jpg");
-    background-repeat: no-repeat;
     background-position-y: 15%;
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 700px;
+    background-attachment: local;
+    height: auto;
     overflow-x: hidden;
 
 }
