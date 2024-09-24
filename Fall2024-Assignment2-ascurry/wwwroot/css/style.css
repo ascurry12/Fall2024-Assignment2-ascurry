@@ -1,0 +1,134 @@
+@media (min-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+  }
+
+  *{margin: 0; padding: 0;}
+
+body {
+    width: 100%;
+    font-family: "Arsenal SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url("../images/jellyfish.jpg");
+    background-repeat: no-repeat;
+    background-position-y: 15%;
+    background-size: cover;
+    height: 700px;
+    overflow-x: hidden;
+
+}
+
+button {
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: white;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(181, 181, 181);
+    border-width: 1px;
+    padding: 8px;
+    margin: 0px 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(239, 239, 239);
+}
+
+#queryButtons {
+    margin: 0%;
+    width: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+#header {
+    display:flex;
+    background-color: rgba(255, 255, 255, 0.887);
+    border-radius: 0px 0px 10px 10px;
+    border-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-bottom-style: solid;
+}
+
+#header p {
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#header img {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+
+#title:hover {
+    cursor: default;
+}
+
+#searchResults {
+    visibility: hidden;
+    background-color: rgba(255, 255, 255, 0.84);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    border-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    margin-left: 30px;
+    margin-right: 40px;
+    margin-top: 20px;
+    padding: 10px;
+}
+#searchResults p {
+    padding: 10px;
+}
+
+#time {
+    visibility: hidden;
+}
+
+#query {
+    background-color: rgba(255, 255, 255, 0.949);
+    text-align: left;
+    font-size: 20px;
+    border: solid;
+    border-radius: 25px;
+    border-color: white;
+    border-width: px;
+    outline: none;
+    height: 30px;
+    padding: 10px 20px;
+    margin-bottom: 40px;
+    
+}
+#queryButtons p {
+    margin: 40px;
+    margin-top: 10%;
+}
+
+#tagline {
+    padding: 8px;
+    font-size: 38px;
+    text-shadow: 2px 2px 4px black;
+    color: white;
+    cursor: default;
+}
+
+#tagline em:hover{
+    color: rgb(24, 124, 255);
+    transition: 0.5s;
+}
+
+#query:focus {
+    outline: solid;
+    outline-color: rgb(214, 214, 214);
+}
+
+#query:hover {
+    cursor: text;
+}

@@ -2,11 +2,57 @@
 <html lang="en">
 
 <head>
+    <title>Atlantis</title> <!-- searching friends  -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.0/themes/base/jquery-ui.css" integrity="sha384-b+3kCkBF7JElwswpAsmVFMmrPhoYrpI5w68/JyidGsEYjaPuo0WDeg5Hx6YXxZqs" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.0/jquery-ui.min.js" integrity="sha384-8EM386r8XMMzwGPUxfGNr6c1wIOYnPQBJ6VFxzKCZeklpQarHoZGB40kdNDA3gYr" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
 </head>
 
-<body>
-    <script type="text/javascript" src="./js/script.js"></script>
+
+<body id="searchBody">
+    <div id="header">
+        <img src="./images/trident.png">
+        <p id="title" onclick="{changeBackground()}">Atlantis</p>
+    </div>
+    <div id="queryButtons"> 
+        <p><span id="tagline">Who will find the <em id="lostcity" onclick="{theLostCity()}">lost city</em>?</span></p>
+        <input id="query" size="60">
+        <div>
+            <button id="searchButton" onclick="{searchButtonClick()}">Search</button>
+            <button id="luckyButton" onclick="{luckyButtonClick()}">I'm Feeling Lucky</button>
+            <button id="timeButton" onclick="{timeButtonClick()}">What Time Is It?</button>
+        </div>
+    </div>
+
+    <div id="searchResults"></div>
+    <div id="time" title="The current time is...">
+        
+    </div>
+
+    <script type="text/javascript">
+        
+    </script>
+
 </body>
 
+<footer>
+    <br>
+</footer>
+
 </html>
+
+<!--
+    A header with the name of your "search engine" (be creative)
+    A title of the same name
+    A text box with an ID of query
+    A button with a value of Search under your text box
+    A second button that will display the current time
+    An empty div with an ID of searchResults
+    A second empty div with an ID of time
+-->
