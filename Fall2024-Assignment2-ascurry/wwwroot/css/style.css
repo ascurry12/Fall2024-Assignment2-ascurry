@@ -14,8 +14,8 @@ body {
     background-image: url("../images/jellyfish.jpg");
     background-position-y: 15%;
     background-size: cover;
+    background-repeat: no-repeat;
     overflow-x: hidden;
-
 }
 
 button {
