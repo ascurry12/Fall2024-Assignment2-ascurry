@@ -23,12 +23,12 @@ function luckyButtonClick() {
 
 function timeButtonClick() {
     const d = new Date;
-    var formmated = d.toLocaleString([], {
+    var formatted = d.toLocaleString([], {
         hour: '2-digit',
         minute: '2-digit'
     });
 
-    var time = `<p><span class="ui-icon ui-icon-clock" style="float:left; margin:0 7px 50px 0;"></span>${formmated}</p>`;
+    var time = `<p><span class="ui-icon ui-icon-clock" style="float:left; margin:0 7px 50px 0;"></span>${formatted}</p>`;
     $('#time').html(time);
     $('#time').dialog({ height: 90 });
     $('#time').css('visibility', 'visible');
